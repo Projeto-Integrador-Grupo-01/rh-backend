@@ -27,7 +27,7 @@ public class Departamento {
 	private String icone;
 	
 	@OneToMany(mappedBy = "departamento", cascade = CascadeType.REMOVE)
-	List<Colaborador> colaboradores;
+	List<Colaborador> colaborador;
 	
 	public Long getId() {
 		return id;
@@ -53,12 +53,12 @@ public class Departamento {
 		this.icone = icone;
 	}
 	
-	public List<Colaborador> getColaboradores() {
-		return colaboradores;
+	public List<Colaborador> getColaborador() {
+		return colaborador;
 	}
 	
-	public void setColaboradores(List<Colaborador> colaboradores) {
-		this.colaboradores = colaboradores;
+	public void setColaborador(List<Colaborador> colaborador) {
+		this.colaborador = colaborador;
 	}
 
 }
