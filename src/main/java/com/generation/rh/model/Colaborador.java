@@ -3,10 +3,9 @@ package com.generation.rh.model;
 import java.math.BigDecimal;
 import java.time.LocalDateTime;
 
-import org.hibernate.annotations.UpdateTimestamp;
-
 import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
 
+import jakarta.persistence.Column;
 import jakarta.persistence.Entity;
 import jakarta.persistence.GeneratedValue;
 import jakarta.persistence.GenerationType;
@@ -35,8 +34,9 @@ public class Colaborador {
     @Email(message = "Informe um e-mail válido!")
     private String email;
 
-    @UpdateTimestamp
-    private LocalDateTime data;
+    @NotNull(message = "A Data de Nascimento é Obrigatória!")
+    @Column(name = "dt_nasc")
+    private LocalDateTime dtNasc;
 
     @NotBlank(message = "O Cargo é Obrigatório!")
     private String cargo;
@@ -77,12 +77,12 @@ public class Colaborador {
 		this.email = email;
 	}
 
-	public LocalDateTime getData() {
-		return data;
+	public LocalDateTime getDtNasc() {
+		return dtNasc;
 	}
 
-	public void setData(LocalDateTime data) {
-		this.data = data;
+	public void setDtNasc(LocalDateTime data) {
+		this.dtNasc = data;
 	}
 
 	public String getCargo() {
