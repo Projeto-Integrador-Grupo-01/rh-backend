@@ -1,7 +1,7 @@
 package com.generation.rh.model;
 
 import java.math.BigDecimal;
-import java.time.LocalDateTime;
+import java.time.LocalDate;
 
 import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
 
@@ -36,7 +36,7 @@ public class Colaborador {
 
     @NotNull(message = "A Data de Nascimento é Obrigatória!")
     @Column(name = "dt_nasc")
-    private LocalDateTime dtNasc;
+    private LocalDate dtNasc;
 
     @NotBlank(message = "O Cargo é Obrigatório!")
     private String cargo;
@@ -77,12 +77,12 @@ public class Colaborador {
 		this.email = email;
 	}
 
-	public LocalDateTime getDtNasc() {
+	public LocalDate getDtNasc() {
 		return dtNasc;
 	}
 
-	public void setDtNasc(LocalDateTime data) {
-		this.dtNasc = data;
+	public void setDtNasc(LocalDate dtNasc) {
+		this.dtNasc = dtNasc;
 	}
 
 	public String getCargo() {
