@@ -1,16 +1,31 @@
-# ConectaRH - Backend
+<div align="center">
+  <img width="450" height="1024" alt="logo_rh" src="https://github.com/user-attachments/assets/413c3d6d-eedf-469c-933b-8035fe1b300b"
+ />
+</div>
+<div align="center">
+  <a href="https://git.io/typing-svg">
+    <img src="https://readme-typing-svg.herokuapp.com?font=Fira+Code&size=24&duration=3000&pause=1000&color=e0a98a&center=true&vCenter=true&width=850&lines=Conecta+RH+–+mais+que+RH,+somos+conexão+humana" alt="Typing SVG" />
+  </a>
+</div>
 
-## 1. Descrição
+---
+
+## 👥 1. Descrição
 
 O ConectaRH é um projeto integrador voltado à transformação humana e organizacional. Ele une tecnologia, empatia e gestão de pessoas para promover relações de trabalho mais humanas, produtivas e sustentáveis. A proposta é oferecer uma consultoria moderna e acessível em Recursos Humanos, com foco no desenvolvimento de talentos, fortalecimento de equipes e aprimoramento da cultura organizacional.
 
 ---
 
-## 2. Sobre esta API
+## ⚙️ 2. Sobre esta API
 
 A API foi construída em Java com Spring Boot e oferece funcionalidades completas para o gerenciamento de colaboradores, departamentos e usuários. Ela permite operações de CRUD, autenticação, associação entre entidades e visualização de dados.
 
-### 2.1. Principais Funcionalidades
+     Operações de CRUD
+     Autenticação e segurança
+     Associação entre entidades
+     Visualização e filtragem de dados
+
+### 🔧 2.1. Principais Funcionalidades
 
 1. Cadastro e gerenciamento de colaboradores
 2. Associação de colaboradores a departamentos
@@ -24,9 +39,9 @@ A API foi construída em Java com Spring Boot e oferece funcionalidades completa
 
 ---
 
-## 3. Diagrama de Classes
+## 🧩 3. Diagrama de Classes
 
-```text
+```mermaid
 classDiagram
     class Colaborador {
         - Long id
@@ -51,6 +66,7 @@ classDiagram
         - String nome
         - String email
         - String senha
+        - String foto
     }
 
     Colaborador --> Departamento : pertence a
@@ -59,9 +75,9 @@ classDiagram
 
 ---
 
-## 4. Diagrama Entidade-Relacionamento (DER)
+## 🗂️ 4. Diagrama Entidade-Relacionamento (DER)
 
-```text
+```mermaid
 erDiagram
     tb_colaborador {
         bigint id PK
@@ -85,6 +101,7 @@ erDiagram
         varchar nome
         varchar email
         varchar senha
+        varchar foto
     }
 
     tb_colaborador ||--o{ tb_departamento : "pertence a"
@@ -92,7 +109,7 @@ erDiagram
 
 ---
 
-## 5. Tecnologias utilizadas
+## 🛠️ 5. Tecnologias utilizadas
 
 | Item                          | Descrição  |
 | ----------------------------- | ---------- |
@@ -109,10 +126,10 @@ erDiagram
 
 ---
 
-## 6. Configuração e Execução
+## 🚀 6. Configuração e Execução
 
 ```bash
-1. Clone o repositório:git clone https://github.com/seu-usuario/conectarh.git
+1. Clone o repositório:git clone https://github.com/Projeto-Integrador-Grupo-01/rh-backend.git
 ```
 
 2. Abra o projeto no Eclipse ou STS
@@ -124,9 +141,7 @@ erDiagram
 
 ## 🙌 Equipe
 
-Desenvolvido por [Tech Sisters](https://projeto-integrador-grupo-01.github.io/techsisters/) 🍃
-
-
+Desenvolvido por 💚 [Tech Sisters](https://projeto-integrador-grupo-01.github.io/techsisters/) 🍃
 
 <table align="center">
   <tr>
