@@ -116,4 +116,9 @@ public class Colaborador {
 	public void setDepartamento(Departamento departamento) {
 		this.departamento = departamento;
 	}
+
+	public char[] getHorasMensais() {
+		// TODO Auto-generated method stub
+		return null;
+	}
 }

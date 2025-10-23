@@ -17,6 +17,8 @@ import org.springframework.web.bind.annotation.ResponseStatus;
 import org.springframework.web.bind.annotation.RestController;
 
 import com.generation.rh.model.Colaborador;
+import com.generation.rh.records.CalculoSalario;
+import com.generation.rh.records.Holerite;
 import com.generation.rh.repository.ColaboradorRepository;
 
 import jakarta.validation.Valid;
@@ -66,6 +68,15 @@ public class ColaboradorController {
 	@DeleteMapping("/{id}")
 	public void delete(@PathVariable Long id) {
 		colaboradorRepository.deleteById(id);
+	}
+	
+	@PostMapping("/calcularsalario/{id}")
+	public ResponseEntity<Holerite> calcularSalario(
+			@PathVariable Long id,
+			@RequestBody CalculoSalario dadosSalario) {
+
+		Holerite holerite = calcularSalarioService.calcularSalario(id, dadosSalario);
+		return ResponseEntity.status(HttpStatus.OK).body(holerite);
 	}
 	
 	
