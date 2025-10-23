@@ -1,12 +1,13 @@
 <div align="center">
   <img width="450" height="1024" alt="logo_rh" src="https://github.com/user-attachments/assets/413c3d6d-eedf-469c-933b-8035fe1b300b"
  />
-
+</div>
 <div align="center">
   <a href="https://git.io/typing-svg">
     <img src="https://readme-typing-svg.herokuapp.com?font=Fira+Code&size=24&duration=3000&pause=1000&color=e0a98a&center=true&vCenter=true&width=850&lines=Conecta+RH+–+mais+que+RH,+somos+conexão+humana" alt="Typing SVG" />
   </a>
-    
+</div>
+
 ---
 
 ## 👥 1. Descrição
