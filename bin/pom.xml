@@ -55,11 +55,21 @@
 			<scope>runtime</scope>
 		</dependency>
 		<dependency>
+ 		 	<groupId>io.github.cdimascio</groupId>
+ 		 	<artifactId>java-dotenv</artifactId>
+  			<version>5.2.2</version> <!-- verifique a versão mais recente ao publicar -->
+		</dependency>
+		<dependency>
 			<groupId>org.springframework.boot</groupId>
 			<artifactId>spring-boot-starter-test</artifactId>
 			<scope>test</scope>
 		</dependency>
-	</dependencies>
+		<dependency>
+			<groupId>org.scala-lang</groupId>
+			<artifactId>scala-library</artifactId>
+			<version>2.13.0</version>
+		</dependency>
+ </dependencies>
 
 	<build>
 		<plugins>
