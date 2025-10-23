@@ -29,6 +29,9 @@ public class ColaboradorController {
 	@Autowired
 	private ColaboradorRepository colaboradorRepository;
 	
+	@Autowired
+	private CalcularSalarioService calcularSalarioService;
+	
 	@GetMapping
 	public ResponseEntity<List<Colaborador>> getAll(){
 		return ResponseEntity.ok(colaboradorRepository.findAll());
